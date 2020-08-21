@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{foreach $data as $v}
+<ul>
+    <li>姓名:{$v["name"]}</li>
+    <li>年龄:{$v["age"]}</li>
+    <li>
+        {if $v["sex"]=="man"}
+        男
+        {else}
+        女
+        {/if}
+    </li>
+    <li>
+        <a href="index.php/index/index/del">删除</a>
+    </li>
+</ul>
+{/foreach}
+
+<a href="index.php/teach/log/add">添加日报</a>
+</body>
+</html>
